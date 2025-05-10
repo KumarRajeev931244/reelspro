@@ -25,6 +25,8 @@ export async function POST(request: NextRequest){
     try {
         // find user is login
         const session = await getServerSession(authOptions)
+        console.log("session:",session);
+        
         if(!session){
             return NextResponse.json(
                 {error:"unauthorized"},

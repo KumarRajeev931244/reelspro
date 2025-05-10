@@ -35,17 +35,7 @@ providers: [
         }
       } catch (error) {
         throw error   
-      }
-
-
-
-
-
-
-
-
-      
-      
+      } 
     }
   })
 ],
